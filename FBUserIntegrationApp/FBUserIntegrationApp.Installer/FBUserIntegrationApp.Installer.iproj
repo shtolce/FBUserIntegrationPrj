@@ -1,0 +1,87 @@
+﻿<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>084863be-be7c-4842-9b4b-2e7dd187c8e6</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IntegrationApp.FBUserIntegrationApp.Installer</RootNamespace>
+    <AssemblyName>IntegrationApp.FBUserIntegrationApp.Installer</AssemblyName>
+    <Name>FBUserIntegrationApp.Installer</Name>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FunctionalBlockType>Project</FunctionalBlockType>
+    <FunctionalBlockVersion>01.00.00</FunctionalBlockVersion>
+    <FunctionalBlockName>FBUserIntegrationApp</FunctionalBlockName>
+    <FunctionalBlockPrefix>IntegrationApp</FunctionalBlockPrefix>
+    <FunctionalBlockModels>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel</FunctionalBlockModels>
+    <FunctionalBlockDescription>
+    </FunctionalBlockDescription>
+    <SitPlatformVersion>3.1</SitPlatformVersion>
+    <AutoDeployPackage>False</AutoDeployPackage>
+    <CanBeExtended>False</CanBeExtended>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU'  ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="ExternalDependencies" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\IntegrationApp.FBUserIntegrationApp.Dbinit.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\IntegrationApp.FBUserIntegrationApp.References.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\IntegrationApp.FBUserIntegrationApp.ApplicationLog.en-US.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FBUserIntegrationApp.CommandHandler\FBUserIntegrationApp.CommandHandler.csproj">
+      <Name>FBUserIntegrationApp.CommandHandler</Name>
+      <Project>{ad36ad9d-b79e-4d38-8b02-7e4b56253afe}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\FBUserIntegrationApp.EventHandler\FBUserIntegrationApp.EventHandler.csproj">
+      <Name>FBUserIntegrationApp.EventHandler</Name>
+      <Project>{570f2a95-626e-4971-8d3f-775f5094865a}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\FBUserIntegrationApp.IAPOMModel\FBUserIntegrationApp.IAPOMModel.pmproj">
+      <Name>FBUserIntegrationApp.IAPOMModel</Name>
+      <Project>{21ee9890-18eb-4560-b074-7948a4815667}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\FBUserIntegrationApp.ReadingFunctionHandler\FBUserIntegrationApp.ReadingFunctionHandler.csproj">
+      <Name>FBUserIntegrationApp.ReadingFunctionHandler</Name>
+      <Project>{66fb4f18-db69-46fd-aed2-b9b668b5183f}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\FBUserIntegrationApp.UserInterface\FBUserIntegrationApp.UserInterface.csproj">
+      <Name>FBUserIntegrationApp.UserInterface</Name>
+      <Project>{33fc7b17-c58b-415f-8483-84f73aba09d0}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIt.Build.Installer.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

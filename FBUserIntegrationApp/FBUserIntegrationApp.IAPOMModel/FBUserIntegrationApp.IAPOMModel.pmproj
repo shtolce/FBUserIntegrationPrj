@@ -1,0 +1,102 @@
+﻿<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>21ee9890-18eb-4560-b074-7948a4815667</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel</RootNamespace>
+    <AssemblyName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel</AssemblyName>
+    <Name>FBUserIntegrationApp.IAPOMModel</Name>
+    <FunctionalBlockType>Project</FunctionalBlockType>
+    <FunctionalBlockVersion>01.00.00</FunctionalBlockVersion>
+    <FunctionalBlockName>FBUserIntegrationApp</FunctionalBlockName>
+    <FunctionalBlockDomain>FBUserIntegrationApp</FunctionalBlockDomain>
+    <FunctionalBlockPrefix>IntegrationApp</FunctionalBlockPrefix>
+    <SitPlatformVersion>3.1</SitPlatformVersion>
+    <DocumentationFolder>
+    </DocumentationFolder>
+    <DocumentationCompilerOption>True</DocumentationCompilerOption>
+    <ParallelCompilerOption>False</ParallelCompilerOption>
+    <FunctionalBlockDomainPrefix>IA</FunctionalBlockDomainPrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU'  ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Diagrams\" />
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Project.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\DataSource.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Command" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Command\Command.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\DataModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\DataModel\DataModel.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Event" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Event\Event.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\ReadingFunction" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\ReadingFunction\ReadingFunction.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Security\Security.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Alias" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Alias\Alias.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Type" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Type\Type.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Diagrams\IntegrationApp_IA_FBUserIntegrationApp.dm" />
+  </ItemGroup>
+  <Import Project="$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIt.DSL.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
