@@ -1,9 +1,57 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="ModelDiagram"
-    targetNamespace="http://tempuri.org/ModelDiagram.xsd"
-    elementFormDefault="qualified"
-    xmlns="http://tempuri.org/ModelDiagram.xsd"
-    xmlns:mstns="http://tempuri.org/ModelDiagram.xsd"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
->
-</xs:schema>
+<?xml version="1.0"?>
+<ArrayOfProjectSuo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectSuo>
+    <DiagramName>IntegrationApp_IA_FBUserIntegrationApp.dm</DiagramName>
+    <FileName>FBUserIntegrationApp.IAPOMModel</FileName>
+    <Artifacts>
+      <ArtifactSuo>
+        <X>922</X>
+        <Y>265</Y>
+        <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.DataModel.EquipmentConfiguration</FullName>
+        <IsExpandedA>false</IsExpandedA>
+        <IsExpandedB>false</IsExpandedB>
+        <IsExpandedC>false</IsExpandedC>
+      </ArtifactSuo>
+      <ArtifactSuo>
+        <X>853</X>
+        <Y>44</Y>
+        <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.ReadingFunctions.GetEquipmentAPS</FullName>
+        <IsExpandedA>false</IsExpandedA>
+        <IsExpandedB>true</IsExpandedB>
+        <IsExpandedC>false</IsExpandedC>
+      </ArtifactSuo>
+      <ArtifactSuo>
+        <X>892</X>
+        <Y>400</Y>
+        <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.DataModel.Equipment</FullName>
+        <IsExpandedA>true</IsExpandedA>
+        <IsExpandedB>false</IsExpandedB>
+        <IsExpandedC>false</IsExpandedC>
+      </ArtifactSuo>
+      <ArtifactSuo>
+        <X>5</X>
+        <Y>5</Y>
+        <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Commands.CreateEquipmentConfiguration_APS</FullName>
+        <IsExpandedA>true</IsExpandedA>
+        <IsExpandedB>false</IsExpandedB>
+        <IsExpandedC>false</IsExpandedC>
+      </ArtifactSuo>
+      <ArtifactSuo>
+        <X>600</X>
+        <Y>499</Y>
+        <FullName>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Types.PropertyWithAttributesParameterType</FullName>
+        <IsExpandedA>true</IsExpandedA>
+        <IsExpandedB>false</IsExpandedB>
+        <IsExpandedC>false</IsExpandedC>
+      </ArtifactSuo>
+      <ArtifactSuo>
+        <X>165</X>
+        <Y>196</Y>
+        <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Commands.CreateMaterial_APS</FullName>
+        <IsExpandedA>false</IsExpandedA>
+        <IsExpandedB>false</IsExpandedB>
+        <IsExpandedC>false</IsExpandedC>
+      </ArtifactSuo>
+    </Artifacts>
+  </ProjectSuo>
+</ArrayOfProjectSuo>

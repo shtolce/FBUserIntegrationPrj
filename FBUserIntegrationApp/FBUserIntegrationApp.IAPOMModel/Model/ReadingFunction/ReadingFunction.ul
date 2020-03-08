@@ -1,1 +1,20 @@
 VERSION '01.13'
+
+[@Guid(7192937c-14b0-498e-b17d-21e080997c00)]
+READING FUNCTION GetEquipmentAPS
+OUTPUT
+    [Length = Max]
+    Name AS string
+    [Optional]
+    [Length = 255]
+    Description AS string
+    [Optional]
+    [Length = 255]
+    LevelNId AS string
+    [Optional]
+    [Length = 255]
+    EquipmentTypeNId AS string
+    [Optional]
+    [Length = 255]
+    NId AS string
+

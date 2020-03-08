@@ -1,1 +1,28 @@
 VERSION '01.13'
+
+[Composite]
+[Protected]
+[@Guid(e31964c7-0262-4e6e-9a4d-dcd2d2010d2a)]
+COMMAND CreateEquipmentConfiguration_APS
+WITH
+    [Length = 255]
+    NId AS string
+    [Length = 255]
+    Name AS string
+    [Optional]
+    [Length = 255]
+    LevelNId AS string
+    [Optional]
+    [Length = 255]
+    Description AS string
+
+[Composite]
+[Protected]
+[@Guid(3122a68c-56f8-4cce-8022-03809ae92101)]
+COMMAND qwe
+
+[Composite]
+[Protected]
+[@Guid(1a33aa41-9a84-4ee0-ae43-285ad105cd22)]
+COMMAND CreateMaterial_APS
+

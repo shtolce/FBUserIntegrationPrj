@@ -1,0 +1,37 @@
+﻿<link rel="stylesheet" ng-href="IntegrationApp.FBUserIntegrationApp/styles/scrolled.css">
+
+<div id="itemlist" class="content-area content-area-relative" style="height: calc(100% - 30px) !important">
+    <sit-command-bar sit-type="bar" barType="Tool">
+        <sit-command sit-icon="fa-wrench"
+                     sit-name="CreateEquipmentConfiguration_APS"
+                     ng-click="vm.importEquipmentButtonHandler"
+                     sit-tooltip="Import Equipment"
+                     sit-label="Import"
+                     sit-type="command">CreateEquipment</sit-command>
+        <sit-command sit-icon="fa-wrench"
+                     sit-name="GetEquipmentAPS"
+                     ng-click="vm.readEquipmentButtonHandler"
+                     sit-tooltip="Read Equipment"
+                     sit-label="Read"
+                     sit-type="command">Read Equipment</sit-command>
+    </sit-command-bar>
+    <br/>
+    <br/>
+    <div class="scrolled">
+        <table border="1" width="100%">
+            <tr>
+                <th ng-repeat="key in vm.tableKeys" >
+                    {{key}}
+                </th>
+            </tr>
+            <tr ng-repeat="el in vm.dataArray.value">
+                <td ng-repeat="key in  vm.tableKeys">
+                    <p ng-if="key!='checked'">{{el[key]}}</p>
+                    <p><input ng-if="key=='checked'" type="checkbox" name="key" ng-model="el.checked" ng-checked="el[key]" value="el[key]"></p>
+
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

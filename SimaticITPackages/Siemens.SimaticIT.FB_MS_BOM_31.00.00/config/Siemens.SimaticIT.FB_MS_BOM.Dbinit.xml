@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="FB_MS_BOM" domainName="MasterData">
+
+    <Entity type="Siemens.SimaticIT.MasterData.FB_MS_BOM.MSModel.DataModel.BoMItemGroupType">
+      <Property name="NId" kind="Plain" value="Alternative" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.FB_MS_BOM.MSModel.DataModel.BoMItemGroupType">
+      <Property name="NId" kind="Plain" value="SelectedFit" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.FB_MS_BOM.MSModel.DataModel.BoMItemGroupType">
+      <Property name="NId" kind="Plain" value="RangeParts" />
+    </Entity>
+    
+    <!-- BoMLifecycle State Machine  -->   
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+      <Property name="NId" kind="Plain" value="BoMLifecycle" />
+      <Property name="Name" kind="Plain" value="Bill of Material Lifecycle" />
+      <Property name="Description" kind="Plain" value="Internal Bill of Material Lifecycle for Routing" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+    </Entity>
+
+    <!--  BoM Status Definitions  -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusDefinition">
+      <Property name="NId" kind="Plain" value="Edit" />
+      <Property name="Name" kind="Plain" value="Edit" />
+      <Property name="Description" kind="Plain" value="Edit Status" />
+      <Property name="Color" kind="Plain" value="" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+      <Property name="Outcome" kind="Plain" value="0" />
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusDefinition">
+      <Property name="NId" kind="Plain" value="Release" />
+      <Property name="Name" kind="Plain" value="Release" />
+      <Property name="Description" kind="Plain" value="Release Status" />
+      <Property name="Color" kind="Plain" value="" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+      <Property name="Outcome" kind="Plain" value="0" />
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusDefinition">
+      <Property name="NId" kind="Plain" value="Obsolete" />
+      <Property name="Name" kind="Plain" value="Obsolete" />
+      <Property name="Description" kind="Plain" value="Obsolete Status" />
+      <Property name="Color" kind="Plain" value="" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+      <Property name="Outcome" kind="Plain" value="0" />
+    </Entity>
+
+    <!-- BoM Unit Status  -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+      <Property name="NId" kind="Plain" value="Edit" />
+      <Property name="Name" kind="Plain" value="Edit" />
+      <Property name="Description" kind="Plain" value="Edit status" />
+      <Property name="Color" kind="Plain" value="" />
+      <Property name="IsInitial" kind="Plain" value="False" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+      <Property name="Outcome" kind="Plain" value="0" />
+      <Property name="StateMachine" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+          <Property name="NId" kind="Plain" value="BoMLifecycle" />
+        </LogicalKey>
+      </Property>
+      <Property name="StatusBehaviorDefinitions" kind="ManyToManyReference">
+      </Property>
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+      <Property name="NId" kind="Plain" value="Release" />
+      <Property name="Name" kind="Plain" value="Release" />
+      <Property name="Description" kind="Plain" value="Release status" />
+      <Property name="Color" kind="Plain" value="" />
+      <Property name="IsInitial" kind="Plain" value="False" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+      <Property name="Outcome" kind="Plain" value="0" />
+      <Property name="StateMachine" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+          <Property name="NId" kind="Plain" value="BoMLifecycle" />
+        </LogicalKey>
+      </Property>
+      <Property name="StatusBehaviorDefinitions" kind="ManyToManyReference">
+      </Property>
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+      <Property name="NId" kind="Plain" value="Obsolete" />
+      <Property name="Name" kind="Plain" value="Obsolete" />
+      <Property name="Description" kind="Plain" value="Obsolete status" />
+      <Property name="Color" kind="Plain" value="" />
+      <Property name="IsInitial" kind="Plain" value="False" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+      <Property name="Outcome" kind="Plain" value="0" />
+      <Property name="StateMachine" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+          <Property name="NId" kind="Plain" value="BoMLifecycle" />
+        </LogicalKey>
+      </Property>
+      <Property name="StatusBehaviorDefinitions" kind="ManyToManyReference">
+      </Property>
+    </Entity>
+
+    <!-- BoM Status Transition Definition  -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransitionDefinition">
+      <Property name="Verb" kind="Plain" value="from Edit to Release" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransitionDefinition">
+      <Property name="Verb" kind="Plain" value="from Release to Obsolete" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+    </Entity>
+
+    <!--BoM Status Transition-->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransition">
+      <Property name="SourceStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Edit" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="BoMLifecycle" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+      <Property name="TargetStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Release" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="BoMLifecycle" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+      <Property name="Verb" kind="Plain" value="from Edit to Release" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+      <Property name="DoRaiseEvent" kind="Plain" value="False"/>
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransition">
+      <Property name="SourceStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Release" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="BoMLifecycle" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+      <Property name="TargetStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Obsolete" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="BoMLifecycle" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+      <Property name="Verb" kind="Plain" value="from Release to Obsolete" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+      <Property name="DoRaiseEvent" kind="Plain" value="False"/>
+    </Entity>
+  </Section>
+</Sections>

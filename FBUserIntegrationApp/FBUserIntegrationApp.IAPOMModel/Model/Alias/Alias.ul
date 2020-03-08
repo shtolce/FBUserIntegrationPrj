@@ -1,1 +1,3 @@
 VERSION '01.13'
+
+PUBLISH COMMAND Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateDM_Material AS CreateDM_Material

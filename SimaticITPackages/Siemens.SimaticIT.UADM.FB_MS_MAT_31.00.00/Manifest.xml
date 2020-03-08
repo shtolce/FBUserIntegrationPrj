@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>3.1</manifestversion>
+    <platformversion>3.1</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.UADM.FB_MS_MAT</name>
+    <shortname>FB_MS_MAT</shortname>
+    <description>Discrete manufacturing material extension</description>
+    <version>31.00.00</version>
+    <companyname>Siemens.SimaticIT.UADM</companyname>
+    <author>Siemens.SimaticIT.UADM</author>
+    <hash>HrvY/Ehd7JEiuxw1aOzjrQwV8zESPQ/HHSHgAdmrXyM=</hash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>04.00.01</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_MS</name>
+        <version>02.00.01</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>05.00.01</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ES_MS</name>
+        <version>02.00.01</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.U4DM.FB_COMMON_BIN</name>
+        <version>31.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateDM_Material</name>
+                        <shortname>CreateDM_Material</shortname>
+                        <description>Creates a DM_Material, that is a Material to be used in Discrete Manufacturing, as an extension of the Material entity provided by Opcenter Execution Foundation</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateDM_MaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateMaterialAndDM_Material</name>
+                        <shortname>CreateMaterialAndDM_Material</shortname>
+                        <description>Creates both Material and DM_Material at the same time.</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateMaterialAndDM_MaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateSupplier</name>
+                        <shortname>CreateSupplier</shortname>
+                        <description>Creates a Supplier.</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateSupplierHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateMaterialClass</name>
+                        <shortname>CreateMaterialClass</shortname>
+                        <description>Creates a Material Class.</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateMaterialClassHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateFunctionalCode</name>
+                        <shortname>CreateFunctionalCode</shortname>
+                        <description>Creates a Functional Code.</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateFunctionalCodeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.UpdateMaterialAndDM_Material</name>
+                        <shortname>UpdateMaterialAndDM_Material</shortname>
+                        <description>Updates both Material and DM_Material at the same time.</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.UpdateMaterialAndDM_MaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.UpdateDM_Material</name>
+                        <shortname>UpdateDM_Material</shortname>
+                        <description>Updates a DM_Material.</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.UpdateDM_MaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.TCM2CreateMaterialDefinitionList</name>
+                        <shortname>TCM2CreateMaterialDefinitionList</shortname>
+                        <description>Creates a DM_Material. Used in case of integration with Teamcenter Manufacturing.</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.TCM2CreateMaterialDefinitionListHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.DeleteMaterialClassList</name>
+                        <shortname>DeleteMaterialClassList</shortname>
+                        <description>Deletes a list of Material Classes.</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.DeleteMaterialClassListHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.DeleteSupplierList</name>
+                        <shortname>DeleteSupplierList</shortname>
+                        <description>Deletes a list of Suppliers.</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.DeleteSupplierListHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.DeleteFunctionalCodeList</name>
+                        <shortname>DeleteFunctionalCodeList</shortname>
+                        <description>Deletes a list of Functional Codes.</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.DeleteFunctionalCodeListHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.DeleteMaterialList</name>
+                        <shortname>DeleteMaterialList</shortname>
+                        <description>Deletes a list of DM_Materials.</description>
+                        <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.DeleteMaterialListHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateDM_Material_UniqueDM_MaterialCheckHandlerShell</name>
+                        <shortname>CreateDM_Material_UniqueDM_MaterialCheckHandlerShell</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UADM.FB_MS_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <command>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands.CreateDM_Material</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CreateDM_Material_UniqueDM_MaterialCheck</alias>
+                </commandAction></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Events.OnPLMCreateMaterialDefinitionList</name>
+                <shortname>OnPLMCreateMaterialDefinitionList</shortname>
+                <description> Event raised whenever a list of DM-Materials is created.</description>
+                <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.DataModel.MaterialClass</name>
+      <shortname>MaterialClass</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.MaterialGroup</derivefromentity>
+      <root_entity></root_entity>
+      <base_entity>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.MaterialGroup</base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.DataModel.Supplier</name>
+      <shortname>Supplier</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.DataModel.DM_Material</name>
+      <shortname>DM_Material</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.Material</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.Material</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.DataModel.FunctionalCode</name>
+      <shortname>FunctionalCode</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.MaterialGroup</derivefromentity>
+      <root_entity></root_entity>
+      <base_entity>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.MaterialGroup</base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets><wr_facet>
+      <name>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.DataModel.AMPowder</name>
+      <shortname>AMPowder</shortname>
+      <parententity>Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.DataModel.DM_Material</parententity>
+      <root_entity>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.Material</root_entity>
+    </wr_facet></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

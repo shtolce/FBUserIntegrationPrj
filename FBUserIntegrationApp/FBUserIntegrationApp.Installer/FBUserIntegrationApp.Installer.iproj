@@ -17,8 +17,8 @@
     <FunctionalBlockDescription>
     </FunctionalBlockDescription>
     <SitPlatformVersion>3.1</SitPlatformVersion>
-    <AutoDeployPackage>False</AutoDeployPackage>
-    <CanBeExtended>False</CanBeExtended>
+    <AutoDeployPackage>True</AutoDeployPackage>
+    <CanBeExtended>True</CanBeExtended>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU'  ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,12 +30,20 @@
     <OutputPath>bin\Release\</OutputPath>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <AppName>FBUserIntegrationApp</AppName>
+    <CertificateName />
+  </PropertyGroup>
   <ItemGroup>
     <Folder Include="Config" />
     <Folder Include="ExternalDependencies" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\IntegrationApp.FBUserIntegrationApp.Dbinit.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExternalDependencies\Dapper.dll">
+      <SubType>Content</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -75,6 +83,14 @@
       <Project>{33fc7b17-c58b-415f-8483-84f73aba09d0}</Project>
       <Private>True</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Name>Dapper</Name>
+      <AssemblyName>Dapper.dll</AssemblyName>
+      <HintPath>..\FBUserIntegrationApp.ReadingFunctionHandler\bin\Debug\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <Import Project="$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIt.Build.Installer.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

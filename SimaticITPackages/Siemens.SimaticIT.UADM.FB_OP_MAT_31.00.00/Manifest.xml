@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>3.1</manifestversion>
+    <platformversion>3.1</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.UADM.FB_OP_MAT</name>
+    <shortname>FB_OP_MAT</shortname>
+    <description>Discrete Manufacturing Material Runtime MTU</description>
+    <version>31.00.00</version>
+    <companyname>Siemens.SimaticIT.UADM</companyname>
+    <author>Siemens.SimaticIT.UADM</author>
+    <hash>iS4GBqnuXs26Th+seWuGo/hR3xMhyHPkWUItXGbdvSY=</hash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>04.00.01</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_MS</name>
+        <version>02.00.01</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>05.00.01</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_OP</name>
+        <version>05.00.01</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_OP</name>
+        <version>03.00.01</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.U4DM.FB_COMMON_BIN</name>
+        <version>31.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ES_MS</name>
+        <version>02.00.01</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UADM.FB_MS_MAT</name>
+        <version>31.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnitandMaterialTrackingUnitList</name>
+                        <shortname>CreateDM_MaterialTrackingUnitandMaterialTrackingUnitList</shortname>
+                        <description>Creates one or more Material Tracking Units, as well as their extensions specific to Discrete manufacturing (that is, DM_MaterialTrackingUnit entities) on the basis of a list of property values.</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnitandMaterialTrackingUnitListHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnit</name>
+                        <shortname>CreateDM_MaterialTrackingUnit</shortname>
+                        <description>Creates a DM_MaterialTrackingUnit entity: this is possible using this particular command, provided that there already exists a MaterialTrackingUnit entity to be extended.</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnitHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnitandMaterialTrackingUnit</name>
+                        <shortname>CreateDM_MaterialTrackingUnitandMaterialTrackingUnit</shortname>
+                        <description>Creates both a Material Tracking Unit and its extension specific to Discrete manufacturing (that is, its DM_MaterialTrackingUnit).</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnitandMaterialTrackingUnitHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.DeleteMaterialsTrackingUnit</name>
+                        <shortname>DeleteMaterialsTrackingUnit</shortname>
+                        <description>Deletes one or more Material Tracking Units.</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.DeleteMaterialsTrackingUnitHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.UpdateMaterialTrackingUnitAndDM_MaterialTrackingUnit</name>
+                        <shortname>UpdateMaterialTrackingUnitAndDM_MaterialTrackingUnit</shortname>
+                        <description>Updates the properties of both a Material Tracking Unit and its DM_MaterialTrackingUnit extension.</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.UpdateMaterialTrackingUnitAndDM_MaterialTrackingUnitHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.UpdateDM_MaterialTrackingUnit</name>
+                        <shortname>UpdateDM_MaterialTrackingUnit</shortname>
+                        <description>Updates a DM_MaterialTrackingUnit.</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.UpdateDM_MaterialTrackingUnitHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnitHistory</name>
+                        <shortname>CreateDM_MaterialTrackingUnitHistory</shortname>
+                        <description>Creates a history record for a specific Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnitHistoryHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnitHistoryAction</name>
+                        <shortname>CreateDM_MaterialTrackingUnitHistoryAction</shortname>
+                        <description>Creates an Action that can be written to the History of a specific Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnitHistoryActionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateAMPowderBatchGenealogy</name>
+                        <shortname>CreateAMPowderBatchGenealogy</shortname>
+                        <description>Creates the genealogy of a specific Powder Material Batch. </description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateAMPowderBatchGenealogyHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.DeleteDM_MaterialTrackingUnitHistoryAction</name>
+                        <shortname>DeleteDM_MaterialTrackingUnitHistoryAction</shortname>
+                        <description>Deletes all Actions that have been written to the History of a specific Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.DeleteDM_MaterialTrackingUnitHistoryActionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.DeleteAMPowderBatchGenealogy</name>
+                        <shortname>DeleteAMPowderBatchGenealogy</shortname>
+                        <description>Deletes the genealogy of a specific Powder Material Batch.</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.DeleteAMPowderBatchGenealogyHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.UpdateDM_MaterialTrackingUnitHistory</name>
+                        <shortname>UpdateDM_MaterialTrackingUnitHistory</shortname>
+                        <description>Updates the history of a specific Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.UpdateDM_MaterialTrackingUnitHistoryHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.UpdateAMPowderBatchGenealogy</name>
+                        <shortname>UpdateAMPowderBatchGenealogy</shortname>
+                        <description>Updates the genealogy of a specific Powder Material Batch. </description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.UpdateAMPowderBatchGenealogyHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.TriggerPrintingOnDM_MTU</name>
+                        <shortname>TriggerPrintingOnDM_MTU</shortname>
+                        <description>Triggers printing for a specific DM_MaterialTrackingUnit.</description>
+                        <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.TriggerPrintingOnDM_MTUHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnit_UniqueDM_MaterialTrackingUnitCheckHandlerShell</name>
+                        <shortname>CreateDM_MaterialTrackingUnit_UniqueDM_MaterialTrackingUnitCheckHandlerShell</shortname>
+                        <description>Checks that this particular MaterialTrackingUnit entity is not already associated to a DM_MaterialTrackingUnit entity.</description>
+                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <command>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.CreateDM_MaterialTrackingUnit</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CreateDM_MaterialTrackingUnit_UniqueDM_MaterialTrackingUnitCheck</alias>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Commands.DM_MTULinkedCheckOnSetMaterialTrackingUnitMaterialHandlerShell</name>
+                        <shortname>DM_MTULinkedCheckOnSetMaterialTrackingUnitMaterialHandlerShell</shortname>
+                        <description>It checks that there are no DM_MaterialTrackingUnits linked to a specific Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.UADM.FB_OP_MAT.CommandHandler, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitMaterial</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>DM_MTULinkedCheckOnSetMaterialTrackingUnitMaterial</alias>
+                </commandAction></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Events.OnPrintingDM_MTU</name>
+                <shortname>OnPrintingDM_MTU</shortname>
+                <description> This event is fired when a DM_MaterialTrackingUnit is to be printed.</description>
+                <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.DataModel.DM_MaterialTrackingUnit</name>
+      <shortname>DM_MaterialTrackingUnit</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnit</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnit</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.DataModel.DM_MaterialTrackingUnitHistoryAction</name>
+      <shortname>DM_MaterialTrackingUnitHistoryAction</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.DataModel.DM_MaterialTrackingUnitHistory</name>
+      <shortname>DM_MaterialTrackingUnitHistory</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.DataModel.AMPowderBatchGenealogy</name>
+      <shortname>AMPowderBatchGenealogy</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets><wr_facet>
+      <name>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.DataModel.AMPowderMaterialTrackingUnit</name>
+      <shortname>AMPowderMaterialTrackingUnit</shortname>
+      <parententity>Siemens.SimaticIT.UADM.OperationalData.FB_OP_MAT.OPModel.DataModel.DM_MaterialTrackingUnit</parententity>
+      <root_entity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnit</root_entity>
+    </wr_facet></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

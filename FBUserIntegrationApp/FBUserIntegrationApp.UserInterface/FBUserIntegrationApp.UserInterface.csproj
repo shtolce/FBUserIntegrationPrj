@@ -69,11 +69,9 @@
     <Folder Include="IntegrationApp.FBUserIntegrationApp\config\" />
     <Folder Include="IntegrationApp.FBUserIntegrationApp\fonts\" />
     <Folder Include="IntegrationApp.FBUserIntegrationApp\images\" />
-    <Folder Include="IntegrationApp.FBUserIntegrationApp\modules\" />
     <Folder Include="IntegrationApp.FBUserIntegrationApp\resources\" />
     <Folder Include="IntegrationApp.FBUserIntegrationApp\scripts\" />
     <Folder Include="IntegrationApp.FBUserIntegrationApp\services\" />
-    <Folder Include="IntegrationApp.FBUserIntegrationApp\styles\" />
     <Folder Include="IntegrationApp.FBUserIntegrationApp\swac\" />
     <Folder Include="IntegrationApp.FBUserIntegrationApp\widgets\" />
   </ItemGroup>
@@ -81,9 +79,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="IntegrationApp.FBUserIntegrationApp\modules\UserIntegrationModule\module.js" />
+    <Content Include="IntegrationApp.FBUserIntegrationApp\modules\UserIntegrationModule\UserIntegrationScreen-add-ctrl.js" />
+    <Content Include="IntegrationApp.FBUserIntegrationApp\modules\UserIntegrationModule\UserIntegrationScreen-add.html" />
+    <Content Include="IntegrationApp.FBUserIntegrationApp\modules\UserIntegrationModule\UserIntegrationScreen-edit-ctrl.js" />
+    <Content Include="IntegrationApp.FBUserIntegrationApp\modules\UserIntegrationModule\UserIntegrationScreen-edit.html" />
+    <Content Include="IntegrationApp.FBUserIntegrationApp\modules\UserIntegrationModule\UserIntegrationScreen-list-ctrl.js" />
+    <Content Include="IntegrationApp.FBUserIntegrationApp\modules\UserIntegrationModule\UserIntegrationScreen-list.html" />
+    <Content Include="IntegrationApp.FBUserIntegrationApp\modules\UserIntegrationModule\UserIntegrationScreen-select-ctrl.js" />
+    <Content Include="IntegrationApp.FBUserIntegrationApp\modules\UserIntegrationModule\UserIntegrationScreen-select.html" />
+    <Content Include="IntegrationApp.FBUserIntegrationApp\modules\UserIntegrationModule\UserIntegrationScreen-srv.js" />
+    <Content Include="IntegrationApp.FBUserIntegrationApp\styles\scrolled.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="IntegrationApp.FBUserIntegrationApp\modules\IntegrationApp.FBUserIntegrationApp.UserIntegrationModule.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

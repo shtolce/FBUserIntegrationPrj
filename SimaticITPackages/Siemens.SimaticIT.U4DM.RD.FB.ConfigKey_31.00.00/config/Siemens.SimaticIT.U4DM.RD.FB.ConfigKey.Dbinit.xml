@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="ConfigKey" domainName="ReferenceData">
+    
+    <!-- ENGINEERING -->
+    
+    <!--<Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="genealogyModulePath" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="http://{MACHINENAME}/sit-ui/runtime/{UIAPPLICATIONNAME}/#/home/genealogy" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>-->
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="nonConformanceLifeCycleforWorkOrder" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="QUALITY WORKFLOW" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>    
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="nonConformanceLifeCycleforTool" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="QUALITY ITEM WORKFLOW" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="nonConformanceLifeCycleforMaterialItem" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="QUALITY ITEM WORKFLOW" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="nonConformanceLifeCycleforMachine" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="QUALITY ITEM WORKFLOW" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <!--<Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="SUPERVISOR_NC_MODULE_PATH"/>
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="http://{MACHINENAME}/sit-ui/runtime/{UIAPPLICATIONNAME}/#/home/nc-supervisor" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>-->
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="pcdRefreshTime" />
+      <Property name="Type" kind="Plain" value="System.Int32" />
+      <Property name="Val" kind="Plain" value="30" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="saveICVfilter" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="enableWorkOrderMerge" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="NO" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="useAsPlannedBOPLatestVersion" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="NO" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    
+    <!-- RUNTIME -->
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="filterAssignmentUser" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <!--NOT ASSIGNED WORK ORDER OPERATION VISIBILITY-->
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="notAssignedWOOpVisibility" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false"/>
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="showInPCDHavingAppropriateSkill" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="automaticRedirectToDetails" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="certificationManagement" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="OR" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="Certification" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="certificationSkillConfiguration" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="NO" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="Certification" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="certificationSkillLevelFilter" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="NO" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="Certification" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="checkMatConsuption" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="completeWOObyDifferentUser" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="NO" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="refreshTimeWIP" />
+      <Property name="Type" kind="Plain" value="System.Int32" />
+      <Property name="Val" kind="Plain" value="50" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="showOnlyReadOp" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <!--<Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="useDataCollectionWidget" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="allowOutOfRangeSave" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>-->
+    <!--<Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="prekitValidationNeeded" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>-->
+
+    <!-- NC_MAIL -->
+    
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="SMTP" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="mail" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="SMTP_PORT" />
+      <Property name="Type" kind="Plain" value="System.Int32" />
+      <Property name="Val" kind="Plain" value="25" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="mail" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="SMTP_USERNAME" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="mail" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="SMTP_PWD" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="true" />
+      <Property name="Category" kind="Plain" value="mail" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="SMTP_USESSL" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="mail" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="SMTPS" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="mail" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="MAIL_FROM" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="mail" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="MAIL_TEXT" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="mail" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+
+    <!-- AM -->
+
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="editPrintJobFile" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="am" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="checkRecycleCount" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="am" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="PJFImportPlugin" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="am" />
+      <Property name="IsMultiValue" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="PJFTransferPlugin" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="am" />
+      <Property name="IsMultiValue" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="substrateCheckTreatment" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="am" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="substrateCheckThickness" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="am" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="printJobFileAuto" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="am" />
+    </Entity>
+
+    <!-- INTEGRATIONS -->
+    <!--<Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="DNCIntegration" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="integrations" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>-->
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="enableAPSIntegration" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="integrations" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="percentageForAPS" />
+      <Property name="Type" kind="Plain" value="System.Int32" />
+      <Property name="Val" kind="Plain" value="30" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="integrations" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="skippedOperationStatusAPS" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="integrations" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="enableUnscheduling" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="integrations" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="enableDNCIntegration" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="integrations" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="DNCPlugin" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="integrations" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+
+    <!-- TESIS Integration -->
+
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="enbleTeamcenterIntegration" />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="t4eaInt" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="t4eaUser" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="admin" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="t4eaInt" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="t4eaPassword" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="true" />
+      <Property name="Category" kind="Plain" value="t4eaInt" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="urlt4eaIssueReport" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="t4eaInt" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="urlt4eaUpdatedWorkOrder" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="t4eaInt" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="urlt4eaUpdatedWorkOrderCC1" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="t4eaInt" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="urlt4eaSAPConfirmation" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="t4eaInt" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="urlt4eaSAPWorkOrderOperationConfirmation" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="t4eaInt" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+
+
+
+    <!--Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterUserIssue" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="admin" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterUserLocation" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterUserDocument" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterUserIssuePassword" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="admin" />
+      <Property name="IsProtected" kind="Plain" value="true" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterUserLocationPassword" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="true" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterUserDocumentPassword" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="true" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterProtocol" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="http" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterIp" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterfmsip" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterContextRoot" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="tc" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterPort" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.U4DM.RD.FB.ReferenceData.ConfigKey.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="teamcenterFMSPort" />
+      <Property name="Type" kind="Plain" value="System.String" />
+      <Property name="Val" kind="Plain" value="" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="teamcenter" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+    </Entity-->
+    
+  </Section>
+</Sections>

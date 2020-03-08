@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<projects>
+  <project>
+    <type>CommandHandler</type>
+    <path>C:\RaytekPRJ\MES_UserApp_Prj\FBUserIntegrationPrj\FBUserIntegrationApp\FBUserIntegrationApp.CommandHandler\bin\Debug\</path>
+  </project>
+  <project>
+    <type>ReadingFunctionHandler</type>
+    <path>C:\RaytekPRJ\MES_UserApp_Prj\FBUserIntegrationPrj\FBUserIntegrationApp\FBUserIntegrationApp.ReadingFunctionHandler\bin\Debug\</path>
+  </project>
+  <project>
+    <type>EventHandler</type>
+    <path>C:\RaytekPRJ\MES_UserApp_Prj\FBUserIntegrationPrj\FBUserIntegrationApp\FBUserIntegrationApp.EventHandler\bin\Debug\</path>
+  </project>
+  <project>
+    <type>Model</type>
+    <path>C:\RaytekPRJ\MES_UserApp_Prj\FBUserIntegrationPrj\FBUserIntegrationApp\FBUserIntegrationApp.IAPOMModel\bin\</path>
+  </project>
+  <project>
+    <type>UserInterface</type>
+    <path>C:\RaytekPRJ\MES_UserApp_Prj\FBUserIntegrationPrj\FBUserIntegrationApp\FBUserIntegrationApp.UserInterface\bin\</path>
+  </project>
+  <project>
+    <type>Installer</type>
+    <path>C:\RaytekPRJ\MES_UserApp_Prj\FBUserIntegrationPrj\FBUserIntegrationApp\FBUserIntegrationApp.Installer\bin\Debug\</path>
+  </project>
+</projects>

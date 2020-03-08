@@ -1,0 +1,17 @@
+{
+  "name": "IntegrationApp.FBUserIntegrationApp.UserIntegrationModule",
+  "type": "standard",
+  "title": "UserIntegrationModule",
+  "icon": "fa-folder",
+  "functionalBlock": "IntegrationApp.FBUserIntegrationApp",
+  "dependencies": [],
+  "states": [
+    {
+      "id": "home.IntegrationApp_FBUserIntegrationApp_UserIntegrationModule_UserIntegrationScreen",
+      "title": "UserIntegrationScreen",
+      "securable": true,
+      "roles": []
+    }
+  ],
+  "manifestVersion": "01.00.00"
+}
