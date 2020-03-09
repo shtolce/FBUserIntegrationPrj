@@ -11,6 +11,8 @@ using Siemens.SimaticIT.Unified.Common.Information;
 using IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.DataModel.ReadingModel;
 using Siemens.SimaticIT.Unified;
 using IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Commands.Published;
+using Siemens.SimaticIT.UADM.MasterData.FB_MS_MAT.MSModel.Commands;
+using CreateDM_Material = IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Commands.Published.CreateDM_Material;
 
 namespace IntegrationLibrary.MasterData.FBIntegrationLibrary.MSModel.DAL
 {
@@ -71,9 +73,16 @@ namespace IntegrationLibrary.MasterData.FBIntegrationLibrary.MSModel.DAL
         }
 
 
-        public void Update(DM_Material obj)
+        public bool Update(DM_Material obj)
         {
-            throw new NotImplementedException();
+            UpdateDM_Material.Response response = this.platform.CallCommand<UpdateDM_Material, UpdateDM_Material.Response>(
+                new UpdateDM_Material
+                {
+                    LogisticClassNId = obj.LogisticClassNId,
+                    Id = obj.Id
+                    
+                });
+            return response.Succeeded;
         }
 
     }

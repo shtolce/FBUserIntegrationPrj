@@ -66,7 +66,7 @@ namespace IntegrationLibrary.MasterData.FBIntegrationLibrary.MSModel.DAL
             return queriedEntity.Where(x => x.IsDeleted == 0 && x.NId == id).FirstOrDefault();
         }
 
-        public void Update(UoM obj)
+        public bool Update(UoM obj)
         {
             throw new NotImplementedException();
         }

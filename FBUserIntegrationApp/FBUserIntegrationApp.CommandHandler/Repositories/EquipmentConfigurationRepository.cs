@@ -202,7 +202,7 @@ namespace IntegrationLibrary.MasterData.FBIntegrationLibrary.MSModel.DAL
 
         }
 
-        public void Update(EquipmentConfiguration obj)
+        public bool Update(EquipmentConfiguration obj)
         {
             throw new NotImplementedException();
         }

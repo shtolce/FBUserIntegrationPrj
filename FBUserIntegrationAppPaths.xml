@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <projects>
   <project>
-    <type>ReadingFunctionHandler</type>
-    <path>C:\RaytekPRJ\MES_UserApp_Prj\FBUserIntegrationPrj\FBUserIntegrationApp\FBUserIntegrationApp.ReadingFunctionHandler\bin\Debug\</path>
-  </project>
-  <project>
     <type>CommandHandler</type>
     <path>C:\RaytekPRJ\MES_UserApp_Prj\FBUserIntegrationPrj\FBUserIntegrationApp\FBUserIntegrationApp.CommandHandler\bin\Debug\</path>
+  </project>
+  <project>
+    <type>ReadingFunctionHandler</type>
+    <path>C:\RaytekPRJ\MES_UserApp_Prj\FBUserIntegrationPrj\FBUserIntegrationApp\FBUserIntegrationApp.ReadingFunctionHandler\bin\Debug\</path>
   </project>
   <project>
     <type>EventHandler</type>

@@ -21,7 +21,7 @@ namespace UMCDataService.DAL.Interfaces
         IEnumerable<T> GetAllByDateInterval(DateTime dateFrom, TimeSpan dateOffset);
         T GetById(string id);
         bool Create(T obj);
-        void Update(T obj);
+        bool Update(T obj);
         void Delete(int id);
     }
 

@@ -73,9 +73,17 @@ namespace IntegrationLibrary.MasterData.FBIntegrationLibrary.MSModel.DAL
             return queriedEntity.Where(x => x.IsDeleted == 0 && x.NId == id).FirstOrDefault();
         }
 
-        public void Update(Material obj)
+        public bool Update(Material obj)
         {
-            throw new NotImplementedException();
+            UpdateMaterial.Response response = this.platform.CallCommand<UpdateMaterial, UpdateMaterial.Response>(
+                new UpdateMaterial
+                {
+                    Name = obj.Name,
+                    Description = obj?.Description,
+                    UoMNId = obj?.UoMNId,
+                    Id = obj.Id
+                });
+            return response.Succeeded;
         }
     }
 }
