@@ -15,6 +15,22 @@
                      sit-label="Read"
                      sit-type="command">Read Equipment</sit-command>
     </sit-command-bar>
+
+    <sit-command-bar sit-type="bar" barType="Tool">
+        <sit-command sit-icon="fa-wrench"
+                     sit-name="CreateMaterial_APS"
+                     ng-click="vm.importMaterialButtonHandler"
+                     sit-tooltip="Import Material"
+                     sit-label="Import"
+                     sit-type="command">CreateMaterial</sit-command>
+        <sit-command sit-icon="fa-wrench"
+                     sit-name="GetMaterialAPS"
+                     ng-click="vm.readMaterialButtonHandler"
+                     sit-tooltip="Read Material"
+                     sit-label="Read"
+                     sit-type="command">Read Material</sit-command>
+    </sit-command-bar>
+
     <br/>
     <br/>
     <div class="scrolled">

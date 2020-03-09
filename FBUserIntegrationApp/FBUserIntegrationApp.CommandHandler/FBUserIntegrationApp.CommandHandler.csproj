@@ -648,6 +648,8 @@
     <Compile Include="DTModels\QueryWorkOrderSql.cs" />
     <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\CreateEquipmentConfiguration_APSHandler.cs" />
     <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\CreateEquipmentConfiguration_APSHandlerExecution.cs" />
+    <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\CreateMaterial_APSHandler.cs" />
+    <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\CreateMaterial_APSHandlerExecution.cs" />
     <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\qweHandler.cs" />
     <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\qweHandlerExecution.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
@@ -656,7 +658,7 @@
     <Compile Include="Repositories\Equipment1CSQLRepository.cs" />
     <Compile Include="Repositories\EquipmentConfigurationRepository.cs" />
     <Compile Include="Repositories\EquipmentRepository.cs" />
-    <Compile Include="Repositories\MaterialCSQLRepository .cs" />
+    <Compile Include="Repositories\Material1CSQLRepository .cs" />
     <Compile Include="Repositories\MaterialGroupRepository.cs" />
     <Compile Include="Repositories\MaterialRepository.cs" />
     <Compile Include="Repositories\UoMRepository.cs" />

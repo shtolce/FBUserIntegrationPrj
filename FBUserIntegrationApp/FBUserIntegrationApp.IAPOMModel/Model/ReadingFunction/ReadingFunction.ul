@@ -18,3 +18,28 @@ OUTPUT
     [Length = 255]
     NId AS string
 
+[@Guid(692b9032-fc21-4a0f-aabe-b0b2be16fead)]
+READING FUNCTION GetMaterialAPS
+OUTPUT
+    [Optional]
+    [Length = 255]
+    Name AS string
+    [Optional]
+    [Length = 255]
+    NId AS string
+    [Optional]
+    [Length = 255]
+    Revision AS string
+    [Optional]
+    [Length = 255]
+    UoMNId AS string
+    [Optional]
+    [Length = 255]
+    LogisticClassNId AS string
+    [Optional]
+    [Length = 255]
+    MaterialClass_Id AS string
+    [Optional]
+    [Length = 255]
+    Material_Id AS string
+

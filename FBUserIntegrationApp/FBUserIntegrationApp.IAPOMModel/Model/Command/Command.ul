@@ -25,4 +25,24 @@ COMMAND qwe
 [Protected]
 [@Guid(1a33aa41-9a84-4ee0-ae43-285ad105cd22)]
 COMMAND CreateMaterial_APS
+WITH
+    [Length = 255]
+    Name AS string
+    [Length = 255]
+    NId AS string
+    [Optional]
+    [Length = 255]
+    Revision AS string
+    [Optional]
+    [Length = 255]
+    UoMNId AS string
+    [Optional]
+    [Length = 255]
+    LogisticClassNId AS string
+    [Optional]
+    [Length = 255]
+    MaterialClass_Id AS string
+    [Optional]
+    [Length = 255]
+    Material_Id AS string
 

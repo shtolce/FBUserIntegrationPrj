@@ -518,15 +518,19 @@
     <Compile Include="DTModels\QueryWorkOrderSql.cs" />
     <Compile Include="FBUserIntegrationApp.IAPOMModel\ReadingFunctions\GetEquipmentAPSHandler.cs" />
     <Compile Include="FBUserIntegrationApp.IAPOMModel\ReadingFunctions\GetEquipmentAPSHandlerExecution.cs" />
+    <Compile Include="FBUserIntegrationApp.IAPOMModel\ReadingFunctions\GetMaterialAPSHandler.cs" />
+    <Compile Include="FBUserIntegrationApp.IAPOMModel\ReadingFunctions\GetMaterialAPSHandlerExecution.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Equipment1CSQLRepository.cs" />
+    <Compile Include="Repositories\Material1CSQLRepository .cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReadinigFunctionsHandler.coutput">
       <Visible>false</Visible>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

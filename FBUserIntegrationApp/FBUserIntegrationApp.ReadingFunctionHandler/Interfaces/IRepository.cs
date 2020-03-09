@@ -15,4 +15,15 @@ namespace UMCDataService.DAL.Interfaces
         void Update(T obj);
         void Delete(int id);
     }
+    public interface IRepository<T> where T : class
+    {
+        IEnumerable<T> GetAll();
+        IEnumerable<T> GetAllByDateInterval(DateTime dateFrom, TimeSpan dateOffset);
+        T GetById(string id);
+        bool Create(T obj);
+        void Update(T obj);
+        void Delete(int id);
+    }
+
+
 }

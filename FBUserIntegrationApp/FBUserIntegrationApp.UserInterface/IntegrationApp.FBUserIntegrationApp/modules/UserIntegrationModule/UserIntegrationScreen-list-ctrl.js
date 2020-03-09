@@ -33,22 +33,22 @@
             self.viewerData = [];
 
             //Expose Model Methods
-            self.importEquipmentButtonHandler = importEquipmentButtonHandler;
+            self.importEquipmentButtonHandler = importButtonHandler;
+            self.importMaterialButtonHandler = importButtonHandler;
             self.addButtonHandler = addButtonHandler;
             self.editButtonHandler = editButtonHandler;
             self.selectButtonHandler = selectButtonHandler;
             self.deleteButtonHandler = deleteButtonHandler;
             self.readEquipmentButtonHandler = readEquipmentButtonHandler;
+            self.readMaterialButtonHandler = readMaterialButtonHandler;
 
         }
-        function importEquipmentButtonHandler(clickedCommand) {
-            //var params = self.dataArray.value;
+        function importButtonHandler(clickedCommand) {
             let inputParameters = self.dataArray.value;
             busyIndicatorService.show();
             inputParameters.forEach((par)=>{
                     if (par.checked==true)    {
                         delete par.checked;
-
                         dataService.execCommand(this.name, par).then(function (data) {
                             console.log(data);
                         });
@@ -79,6 +79,25 @@
                     NId:n.NId,
                     LevelNId:n.LevelNId,
                     Description:n.Description
+                }});
+
+                self.tableKeys = Object.keys(self.dataArray.value[0]);
+                //console.log(Object.keys(self.dataArray.value[0]));
+            });
+        }
+        function readMaterialButtonHandler(clickedCommand) {
+
+            dataService.readFunction(this.name, {}).then(function (data) {
+                self.dataArray = data;
+                self.dataArray.value = data.value.map( (n)=>{return {
+                    checked:false,
+                    Name: n.Name,
+                    NId: n.NId,
+                    LogisticClassNId: n.LogisticClassNId,
+                    MaterialClass_Id: n.MaterialClass_Id,
+                    Material_Id: n.Material_Id,
+                    Revision: n.Revision,
+                    UoMNId: n.UoMNId
                 }});
 
                 self.tableKeys = Object.keys(self.dataArray.value[0]);

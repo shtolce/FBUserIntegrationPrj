@@ -13,24 +13,24 @@
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
       <ArtifactSuo>
-        <X>853</X>
-        <Y>44</Y>
+        <X>622</X>
+        <Y>73</Y>
         <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.ReadingFunctions.GetEquipmentAPS</FullName>
         <IsExpandedA>false</IsExpandedA>
         <IsExpandedB>true</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
       <ArtifactSuo>
-        <X>892</X>
-        <Y>400</Y>
+        <X>153</X>
+        <Y>524</Y>
         <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.DataModel.Equipment</FullName>
         <IsExpandedA>true</IsExpandedA>
         <IsExpandedB>false</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
       <ArtifactSuo>
-        <X>5</X>
-        <Y>5</Y>
+        <X>880</X>
+        <Y>504</Y>
         <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Commands.CreateEquipmentConfiguration_APS</FullName>
         <IsExpandedA>true</IsExpandedA>
         <IsExpandedB>false</IsExpandedB>
@@ -46,10 +46,18 @@
       </ArtifactSuo>
       <ArtifactSuo>
         <X>165</X>
-        <Y>196</Y>
+        <Y>198</Y>
         <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Commands.CreateMaterial_APS</FullName>
-        <IsExpandedA>false</IsExpandedA>
-        <IsExpandedB>false</IsExpandedB>
+        <IsExpandedA>true</IsExpandedA>
+        <IsExpandedB>true</IsExpandedB>
+        <IsExpandedC>false</IsExpandedC>
+      </ArtifactSuo>
+      <ArtifactSuo>
+        <X>466</X>
+        <Y>120</Y>
+        <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.ReadingFunctions.GetMaterialAPS</FullName>
+        <IsExpandedA>true</IsExpandedA>
+        <IsExpandedB>true</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
     </Artifacts>
