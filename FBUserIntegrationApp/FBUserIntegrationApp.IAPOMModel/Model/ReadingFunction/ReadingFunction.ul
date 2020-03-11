@@ -43,3 +43,38 @@ OUTPUT
     [Length = 255]
     Material_Id AS string
 
+[@Guid(8ebf585d-b24a-47ac-b62c-d0d90935383d)]
+READING FUNCTION GetBoMAPS
+OUTPUT
+    [Length = Max]
+    Description AS string
+    [Length = 255]
+    Name AS string
+    [Length = 255]
+    NId AS string
+    [Optional]
+    Quantity AS decimal
+    [Optional]
+    [Length = 255]
+    MaterialDefinition_NId AS string
+    [Optional]
+    [Length = 255]
+    MaterialDefinition_Name AS string
+    [Optional]
+    [Length = 255]
+    Version AS string
+    [Optional]
+    [Length = 255]
+    BoMItem_NId AS string
+    [Optional]
+    BoMItem_Quantity AS decimal
+    [Optional]
+    [Length = 255]
+    BoMItem_MaterialDefinition_NId AS string
+    [Optional]
+    [Length = 255]
+    BoMItem_MaterialDefinition_Name AS string
+    [Optional]
+    [Length = 255]
+    BoMItem_Name AS string
+

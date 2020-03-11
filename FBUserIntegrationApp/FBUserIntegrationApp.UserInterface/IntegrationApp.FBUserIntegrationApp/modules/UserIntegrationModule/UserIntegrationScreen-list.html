@@ -14,9 +14,6 @@
                      sit-tooltip="Read Equipment"
                      sit-label="Read"
                      sit-type="command">Read Equipment</sit-command>
-    </sit-command-bar>
-
-    <sit-command-bar sit-type="bar" barType="Tool">
         <sit-command sit-icon="fa-wrench"
                      sit-name="CreateMaterial_APS"
                      ng-click="vm.importMaterialButtonHandler"
@@ -29,6 +26,19 @@
                      sit-tooltip="Read Material"
                      sit-label="Read"
                      sit-type="command">Read Material</sit-command>
+        <sit-command sit-icon="fa-wrench"
+                     sit-name="CreateBoM_APS"
+                     ng-click="vm.importBoMButtonHandler"
+                     sit-tooltip="Import BoM"
+                     sit-label="Import"
+                     sit-type="command">CreateBoM</sit-command>
+        <sit-command sit-icon="fa-wrench"
+                     sit-name="GetBoMAPS"
+                     ng-click="vm.readBoMButtonHandler"
+                     sit-tooltip="Read BoM"
+                     sit-label="Read"
+                     sit-type="command">Read BoM</sit-command>
+
     </sit-command-bar>
 
     <br/>
@@ -43,7 +53,11 @@
             <tr ng-repeat="el in vm.dataArray.value">
                 <td ng-repeat="key in  vm.tableKeys">
                     <p ng-if="key!='checked'">{{el[key]}}</p>
-                    <p><input ng-if="key=='checked'" type="checkbox" name="key" ng-model="el.checked" ng-checked="el[key]" value="el[key]"></p>
+                    <p><input ng-if="key=='checked'" type="checkbox" name="key"
+                              ng-model="el.checked" ng-checked="el[key]"
+                              ng-click="vm.onCheck(el)"
+                              value="el[key]">
+                    </p>
 
 
                 </td>

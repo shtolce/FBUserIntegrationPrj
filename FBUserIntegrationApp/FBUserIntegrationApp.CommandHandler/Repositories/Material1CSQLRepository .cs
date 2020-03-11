@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UMCDataService.DAL.Interfaces;
 
-namespace APSDataService.DAL
+namespace IntegrationLibrary.MasterData.FBIntegrationLibrary.MSModel.DAL
 {
     public class Material1CSQLRepository : IRepositorySQL1C<DM_Material>
     {

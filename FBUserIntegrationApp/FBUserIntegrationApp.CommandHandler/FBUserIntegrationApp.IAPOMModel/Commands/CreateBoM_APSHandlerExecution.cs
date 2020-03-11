@@ -9,7 +9,7 @@ namespace IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Co
     /// <summary>
     /// Class initialize
     /// </summary>
-    public partial class CreateMaterial_APSHandlerShell : ICompositeCommandHandler
+    public partial class CreateBoM_APSHandlerShell : ICompositeCommandHandler
     {
         private IUnifiedSdkComposite platform;
         
@@ -22,8 +22,7 @@ namespace IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Co
         public Response Execute(IUnifiedSdkComposite unifiedSdkComposite, ICommand command)
         {
             platform = unifiedSdkComposite;
-
-            return CreateMaterial_APSHandler((CreateMaterial_APS)command, platform);
+            return CreateBoM_APSHandler((CreateBoM_APS)command, platform);
         }
 
         /// <summary>
@@ -31,7 +30,7 @@ namespace IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Co
         /// </summary>
         public global::System.Type GetCommandType()
         {
-            return typeof(CreateMaterial_APS);
+            return typeof(CreateBoM_APS);
         }
     }
 }

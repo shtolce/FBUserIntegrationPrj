@@ -9,6 +9,7 @@ using Siemens.SimaticIT.Unified;
 using Siemens.SimaticIT.SDK.Diagnostics.Tracing;
 using IntegrationLibrary.MasterData.FBIntegrationLibrary.MSModel.DAL;
 using IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.DataModel.ReadingModel;
+using UMCDataService.DAL.Repositories;
 
 namespace IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Commands
 {
@@ -43,10 +44,13 @@ namespace IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Co
             return dm_MatRepo.Create(dmNewMat);
         }
 
-        public bool UpdateDM_Material(DM_Material dmMatEl, string dmMatElKod, string dmMatElName,string dmRevision, string dmLogisticClassNId)
+        public bool UpdateDM_Material(DM_Material dmMatEl,string dmMatElKod, string dmMatElName,string dmRevision, string dmLogisticClassNId)
         {
+            var matFound = matRepo.GetById(dmMatElKod);
+
             var matNewInstance = new Material
             {
+                Id = matFound.Id,
                 Name = dmMatElName,
                 NId = dmMatElKod,
                 Revision = dmRevision,
@@ -90,7 +94,7 @@ namespace IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Co
             }
             else
             {
-                if (UpdateDM_Material(dmMatEl,dmMatElKod, dmMatElName, dmRevision, dmLogisticClassNId) == true)
+                if (UpdateDM_Material(dmMatEl, dmMatElKod, dmMatElName, dmRevision, dmLogisticClassNId) == true)
                 {
                     dmMatEl = dm_MatRepo.GetByNId(dmMatElKod);
                     tracer.Write("Siemens-SimaticIT-Trace-BusinessLogic",
@@ -108,7 +112,7 @@ namespace IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Co
 
 
         [HandlerEntryPoint]
-        private CreateMaterial_APS.Response CreateMaterial_APSHandler(CreateMaterial_APS command)
+        private CreateMaterial_APS.Response CreateMaterial_APSHandler(CreateMaterial_APS command, IUnifiedSdkComposite platform)
         {
             this._platform = platform;
             dm_MatClassesRepo = new MaterialGroupRepository(_platform);

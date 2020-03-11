@@ -35,14 +35,32 @@
             //Expose Model Methods
             self.importEquipmentButtonHandler = importButtonHandler;
             self.importMaterialButtonHandler = importButtonHandler;
+            self.importBoMButtonHandler = importButtonHandler;
             self.addButtonHandler = addButtonHandler;
             self.editButtonHandler = editButtonHandler;
             self.selectButtonHandler = selectButtonHandler;
             self.deleteButtonHandler = deleteButtonHandler;
             self.readEquipmentButtonHandler = readEquipmentButtonHandler;
             self.readMaterialButtonHandler = readMaterialButtonHandler;
+            self.readBoMButtonHandler = readBoMButtonHandler;
+            self.onCheck = onCheck;
+        }
+        function onCheck(el){
+            if((typeof el.NId !== 'undefined') & (el.BoMItem_MaterialDefinition_Name!=='undefined')) {
+                self.dataArray.value.forEach((par)=>{
+                    if (el.NId == par.NId & el!=par)
+                        par.checked = !par.checked;
+                });
+
+            } else{
+                console.log('нет поля');
+            }
+
 
         }
+
+
+
         function importButtonHandler(clickedCommand) {
             let inputParameters = self.dataArray.value;
             busyIndicatorService.show();
@@ -104,6 +122,32 @@
                 //console.log(Object.keys(self.dataArray.value[0]));
             });
         }
+
+        function readBoMButtonHandler(clickedCommand) {
+
+            dataService.readFunction(this.name, {}).then(function (data) {
+                self.dataArray = data;
+                self.dataArray.value = data.value.map( (n)=>{return {
+                    checked:false,
+                    Name:n.Name,
+                    NId:n.NId,
+                    Description:n.Description,
+                    Quantity:n.Quantity,
+                    Version:n.Version,
+                    MaterialDefinition_Name:n.MaterialDefinition_Name,
+                    MaterialDefinition_NId:n.MaterialDefinition_NId,
+                    BoMItem_MaterialDefinition_Name:n.BoMItem_MaterialDefinition_Name,
+                    BoMItem_MaterialDefinition_NId:n.BoMItem_MaterialDefinition_NId,
+                    BoMItem_Name:n.BoMItem_Name,
+                    BoMItem_NId:n.BoMItem_NId,
+                    BoMItem_Quantity:n.BoMItem_Quantity
+                }});
+
+                self.tableKeys = Object.keys(self.dataArray.value[0]);
+                //console.log(Object.keys(self.dataArray.value[0]));
+            });
+        }
+
 
         function addButtonHandler(clickedCommand) {
             $state.go(rootstate + '.add');

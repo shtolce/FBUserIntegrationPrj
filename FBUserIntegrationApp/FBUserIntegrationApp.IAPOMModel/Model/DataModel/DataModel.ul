@@ -152,3 +152,21 @@ ENTITYLINK UoM TO Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.UoM
 [@GuidRef(b269393d-8ab1-41c1-9337-181487273e8f, 5a54a06d-e219-4e56-813b-ddc5fee12312)]
 ENTITYLINK UoMDimension TO Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.UoMDimension
 
+///This entity represents the Bill of Material associated to a given Material.
+[@Guid(bf62d68c-9f0b-4d6a-a957-1ce5e17c3f4f)]
+[@GuidRef(bd6486b6-8404-4970-94ae-3fc14f6b3e95, 156e299b-c501-4a77-a274-7727b783ca00)]
+ENTITYLINK BoM TO Siemens.SimaticIT.MasterData.FB_MS_BOM.MSModel.DataModel.BoM
+
+///This entity represents a Bill of Materials Item. It could be another BOM or a Material.
+[@Guid(fc2ee0dd-a9f2-4d5b-a8c6-aad2cc5b842f)]
+[@GuidRef(bd6486b6-8404-4970-94ae-3fc14f6b3e95, 2437e764-07ba-4fae-aaba-b8e8309086cb)]
+ENTITYLINK BoMItem TO Siemens.SimaticIT.MasterData.FB_MS_BOM.MSModel.DataModel.BoMItem
+
+///This entity groups together BoM Items based on the BoMItem Group type. Predefined type values are: 
+///- Alternative
+///- SelectedFit
+///- RangePart
+[@Guid(76793d63-52cf-4db7-8202-4030a76f8587)]
+[@GuidRef(bd6486b6-8404-4970-94ae-3fc14f6b3e95, 51db7416-7b4d-441e-a39e-74a84fdbca36)]
+ENTITYLINK BoMItemGroupType TO Siemens.SimaticIT.MasterData.FB_MS_BOM.MSModel.DataModel.BoMItemGroupType
+

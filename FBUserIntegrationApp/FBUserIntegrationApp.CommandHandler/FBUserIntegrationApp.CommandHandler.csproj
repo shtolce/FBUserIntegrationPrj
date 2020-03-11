@@ -642,10 +642,13 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTModels\BoMDTO.cs" />
     <Compile Include="DTModels\QueryBomSql.cs" />
     <Compile Include="DTModels\QueryEquipmentSql.cs" />
     <Compile Include="DTModels\QueryMaterialtSql.cs" />
     <Compile Include="DTModels\QueryWorkOrderSql.cs" />
+    <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\CreateBoM_APSHandler.cs" />
+    <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\CreateBoM_APSHandlerExecution.cs" />
     <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\CreateEquipmentConfiguration_APSHandler.cs" />
     <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\CreateEquipmentConfiguration_APSHandlerExecution.cs" />
     <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\CreateMaterial_APSHandler.cs" />
@@ -654,6 +657,9 @@
     <Compile Include="FBUserIntegrationApp.IAPOMModel\Commands\qweHandlerExecution.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BOM1CSQLRepository.cs" />
+    <Compile Include="Repositories\BomItemRepository.cs" />
+    <Compile Include="Repositories\BomRepository.cs" />
     <Compile Include="Repositories\DM_MaterialRepository.cs" />
     <Compile Include="Repositories\Equipment1CSQLRepository.cs" />
     <Compile Include="Repositories\EquipmentConfigurationRepository.cs" />

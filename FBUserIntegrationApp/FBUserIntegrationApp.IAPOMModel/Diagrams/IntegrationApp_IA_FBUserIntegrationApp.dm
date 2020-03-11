@@ -5,16 +5,16 @@
     <FileName>FBUserIntegrationApp.IAPOMModel</FileName>
     <Artifacts>
       <ArtifactSuo>
-        <X>922</X>
-        <Y>265</Y>
+        <X>1011</X>
+        <Y>368</Y>
         <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.DataModel.EquipmentConfiguration</FullName>
         <IsExpandedA>false</IsExpandedA>
         <IsExpandedB>false</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
       <ArtifactSuo>
-        <X>622</X>
-        <Y>73</Y>
+        <X>720</X>
+        <Y>274</Y>
         <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.ReadingFunctions.GetEquipmentAPS</FullName>
         <IsExpandedA>false</IsExpandedA>
         <IsExpandedB>true</IsExpandedB>
@@ -45,19 +45,35 @@
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
       <ArtifactSuo>
-        <X>165</X>
-        <Y>198</Y>
+        <X>720</X>
+        <Y>102</Y>
         <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Commands.CreateMaterial_APS</FullName>
         <IsExpandedA>true</IsExpandedA>
         <IsExpandedB>true</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
       <ArtifactSuo>
-        <X>466</X>
-        <Y>120</Y>
+        <X>946</X>
+        <Y>12</Y>
         <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.ReadingFunctions.GetMaterialAPS</FullName>
         <IsExpandedA>true</IsExpandedA>
         <IsExpandedB>true</IsExpandedB>
+        <IsExpandedC>false</IsExpandedC>
+      </ArtifactSuo>
+      <ArtifactSuo>
+        <X>354</X>
+        <Y>105</Y>
+        <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.ReadingFunctions.GetBoMAPS</FullName>
+        <IsExpandedA>false</IsExpandedA>
+        <IsExpandedB>true</IsExpandedB>
+        <IsExpandedC>false</IsExpandedC>
+      </ArtifactSuo>
+      <ArtifactSuo>
+        <X>107</X>
+        <Y>68</Y>
+        <FullName>IntegrationApp.FBUserIntegrationApp.FBUserIntegrationApp.IAPOMModel.Commands.CreateBoM_APS</FullName>
+        <IsExpandedA>true</IsExpandedA>
+        <IsExpandedB>false</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
     </Artifacts>
